@@ -1,0 +1,47 @@
+header {
+  background: linear-gradient(135deg, #FF5252, #448AFF);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  
+  h1 {
+    margin: 0;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+}
+
+/* User Information */
+.user-info-container {
+  text-align: center;
+  margin: 20px;
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin: 10px 0;
+    color: #007BFF;
+  }
+}

@@ -1,0 +1,36 @@
+.dashboard-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #FF5252, #448AFF);
+  color: #fff;
+}
+
+.dashboard-container h2, .dashboard-container p, .quick-access, .dashboard-info {
+  text-align: center;
+  margin: 10px;
+}
+
+.quick-access button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  color: #fff;
+}
+
+.quick-access button.search-button {
+  background-color: #FF5252;
+}
+
+.quick-access button.history-button {
+  background-color: #448AFF;
+}
+
+.quick-access button:hover {
+  background-color: #FFD600;
+}

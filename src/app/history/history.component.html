@@ -1,0 +1,17 @@
+<header>
+  <h1>Your GitHub Search App</h1>
+  <nav>
+    <a routerLink="/">Dashboard</a>
+    <a routerLink="/search">Search</a>
+  </nav>
+</header>
+
+<ul class="search-results">
+  <li *ngFor="let user of searchHistory" class="user-result">
+    <div class="user-info">
+      <img [src]="user.avatar_url" alt="{{ user.login }}">
+      <span class="login">{{ user.login }}</span>
+    </div>
+    <button class="delete-button" (click)="deleteProfiles(user)">Delete</button>
+  </li>
+</ul>

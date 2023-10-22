@@ -1,0 +1,31 @@
+<header>
+  <h1>Your GitHub Search App</h1>
+  <nav>
+    <a routerLink="/">Dashboard</a>
+    <a routerLink="/search">Search</a>
+  </nav>
+</header>
+
+<div class="user-info-container">
+  <img [src]="user.avatar_url" alt="{{ user.login }}">
+  <h2>{{ user.login }}</h2>
+  <ul>
+    <li>Events URL: {{ user.events_url }}</li>
+    <li>Followers URL: {{ user.followers_url }}</li>
+    <li>Following URL: {{ user.following_url }}</li>
+    <li>Gists URL: {{ user.gists_url }}</li>
+    <li>Gravatar ID: {{ user.gravatar_id }}</li>
+    <li>HTML URL: <a [href]="user.html_url" target="_blank">{{ user.html_url }}</a></li>
+    <li>ID: {{ user.id }}</li>
+    <li>Node ID: {{ user.node_id }}</li>
+    <li>Organizations URL: {{ user.organizations_url }}</li>
+    <li>Received Events URL: {{ user.received_events_url }}</li>
+    <li>Repos URL: {{ user.repos_url }}</li>
+    <li>Score: {{ user.score }}</li>
+    <li>Site Admin: {{ user.site_admin }}</li>
+    <li>Starred URL: {{ user.starred_url }}</li>
+    <li>Subscriptions URL: {{ user.subscriptions_url }}</li>
+    <li>Type: {{ user.type }}</li>
+    <li>URL: {{ user.url }}</li>
+  </ul>
+</div>

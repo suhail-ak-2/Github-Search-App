@@ -1,0 +1,23 @@
+<header>
+  <h1>Your GitHub Search App</h1>
+  <nav>
+    <a routerLink="/">Dashboard</a>
+  </nav>
+</header>
+
+<div class="search-container">
+  <input type="text" (keydown.enter)="searchUsers()" placeholder="Enter GitHub username" [(ngModel)]="searchTerm">
+  <button (click)="searchUsers()">Search</button>
+</div>
+
+<div *ngIf="loading" class="loading-spinner">
+  <div class="spinner"></div>
+</div>
+
+<div class="search-results">
+  <div *ngFor="let user of searchResults" class="user-card" [routerLink]="'/profile/'+user.id">
+    <img [src]="user.avatar_url" alt="{{ user.login }}">
+    <h3>{{ user.login }}</h3>
+    <p>Score: {{ user.score }}</p>
+  </div>
+</div>
